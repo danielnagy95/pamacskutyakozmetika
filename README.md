@@ -1,2 +1,2 @@
 # pamacskutyakozmetika
-Pamacs Kutyakozmetika webmite
+Pamacs Kutyakozmetika website
