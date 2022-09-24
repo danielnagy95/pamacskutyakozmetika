@@ -1,13 +1,12 @@
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
+window.addEventListener("scroll", function(){
+  var navbar = document.getElementById("navbar");
+  var header = document.getElementById("header");
+  if (window.pageYOffset >= header.offsetHeight) {
     navbar.classList.add("sticky")
   } else {
-    navbar.classList.remove("sticky");
+    navbar.classList.remove("sticky")
   }
-}
+})
 var scroll = window.requestAnimationFrame ||
              function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
